@@ -1,12 +1,9 @@
-# make_gnd_embeddings.py
-
 import json
 import os
 import numpy as np
 from tqdm import tqdm
 from sentence_transformers import SentenceTransformer
 
-# 1) 경로 설정 (네 환경에 맞게 수정)
 INPUT_JSONL = "cleaned_data/GND/translated_3_GND.jsonl"
 OUT_DIR = "cleaned_data"
 SUBJ_EMB_PATH = os.path.join(OUT_DIR, "GND/subject_embeddings.npy")
@@ -15,7 +12,6 @@ SUBJ_TEXTS_PATH = os.path.join(OUT_DIR, "GND/subject_texts.json")
 
 os.makedirs(OUT_DIR, exist_ok=True)
 
-# 2) 임베딩 모델 로드
 print("Loading sentence-transformer model...")
 model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
@@ -49,8 +45,6 @@ with open(INPUT_JSONL, "r", encoding="utf-8") as f:
 
 print(f"Total subjects to embed: {len(texts)}")
 
-# 3) 실제 임베딩 계산
-#    batch_size는 하드웨어에 따라 32~128 사이로 조절하면 됨
 print("Encoding texts into embeddings...")
 embeddings = model.encode(
     texts,
@@ -61,7 +55,6 @@ embeddings = model.encode(
 
 print("Embeddings shape:", embeddings.shape)  # (num_subjects, embedding_dim)
 
-# 4) 결과 저장
 np.save(SUBJ_EMB_PATH, embeddings)
 
 with open(SUBJ_IDS_PATH, "w", encoding="utf-8") as f:
