@@ -16,7 +16,7 @@ print("Embeddings shape:", emb.shape)
 norms = np.linalg.norm(emb, axis=1, keepdims=True)
 emb_norm = emb / (norms + 1e-12)
 
-query_idx = 0  # 0번째 subject
+query_idx = 0 
 query_vec = emb_norm[query_idx : query_idx + 1]  # shape (1, dim)
 
 sims = (emb_norm @ query_vec.T).reshape(-1)  # (N,)
