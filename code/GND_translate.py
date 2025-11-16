@@ -1,3 +1,27 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+GND 6-field translator to English using Helsinki-NLP/opus-mt-de-en (MarianMT).
+
+- Code: 그대로 유지
+- 나머지 5개 필드:
+    Classification Name, Name, Alternate Name[], Related Subjects[], Definition
+  의 텍스트를 전부 독일어→영어 번역 모델에 넣음.
+  (이미 영어여도 약간의 패러프레이즈 정도만 날 수 있음)
+
+- DeepL / API 사용 X  → 비용 없음
+- 캐시 사용: 같은 문구는 한 번만 번역
+- resume 옵션: 이전에 번역한 출력 파일이 있으면 그 이후 줄부터 이어서 처리
+
+Usage:
+  python GND_translate_marian.py \
+    --input cleaned_data/gnd_separate.jsonl \
+    --output cleaned_data/gnd_translated_marian.jsonl \
+    --batch-size 16 \
+    --protect-acronyms \
+    --resume
+"""
+
 import os
 import re
 import sys
@@ -8,10 +32,11 @@ import argparse
 import unicodedata
 from typing import Any, Dict, Iterable, List, Tuple
 
-import requests
+import torch
+from transformers import MarianMTModel, MarianTokenizer
 from tqdm import tqdm
 
-DEEPL_FREE_URL = "https://api.deepl.com/v2/translate"
+MODEL_NAME = "Helsinki-NLP/opus-mt-de-en"
 
 # ------------------------- Text Utils -------------------------
 
@@ -55,70 +80,63 @@ def restore_acronyms(texts: List[str], maps_list: List[Dict[str, str]]) -> List[
         out.append(t)
     return out
 
-# ---------------------- DeepL Translate -----------------------
+# ---------------------- MarianMT Translate --------------------
 
-def deepl_translate_batch_auto(
+def load_marian_model():
+    """
+    Load tokenizer + model once, move model to CPU/GPU.
+    """
+    print(f"[Info] Loading model {MODEL_NAME} ...", file=sys.stderr)
+    tokenizer = MarianTokenizer.from_pretrained(MODEL_NAME)
+    model = MarianMTModel.from_pretrained(MODEL_NAME)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model.to(device)
+    model.eval()
+    print(f"[Info] Model loaded on device: {device}", file=sys.stderr)
+    return tokenizer, model, device
+
+def marian_translate_batch(
     texts: List[str],
-    api_key: str,
-    target_lang: str = "EN",
-    max_retries: int = 8,
-    timeout: int = 60,
+    tokenizer: MarianTokenizer,
+    model: MarianMTModel,
+    device: torch.device,
+    max_length: int = 512,
 ) -> List[str]:
     """
-    DeepL FREE translate (AUTO source detection).
-    Sends the texts without source_lang to let DeepL detect language.
-    Retries on 408, 429, 456, 503 and 5xx.
+    Translate a batch of texts using MarianMT (DE->EN).
     """
     if not texts:
         return []
+    # tokenizer가 빈 문자열을 싫어해서 최소한 공백 제거
+    clean_texts = [t if t.strip() else " " for t in texts]
 
-    data = {"target_lang": target_lang}
-    for t in texts:
-        data.setdefault("text", []).append(t)
+    enc = tokenizer(
+        clean_texts,
+        return_tensors="pt",
+        padding=True,
+        truncation=True,
+        max_length=max_length,
+    )
+    enc = {k: v.to(device) for k, v in enc.items()}
 
-    headers = {"Authorization": f"DeepL-Auth-Key {api_key}"}
-    retryable = {408, 429, 456, 503}
-    delay = 1.0
+    with torch.no_grad():
+        generated = model.generate(
+            **enc,
+            max_length=max_length,
+            num_beams=4,
+        )
 
-    with requests.Session() as s:
-        s.headers.update(headers)
-        for attempt in range(1, max_retries + 1):
-            try:
-                r = s.post(DEEPL_FREE_URL, data=data, timeout=timeout)
-                if r.status_code == 200:
-                    js = r.json()
-                    outs = [item["text"] for item in js.get("translations", [])]
-                    if len(outs) < len(texts):  # pad (rare safety)
-                        outs.extend(texts[len(outs):])
-                    return outs
-
-                # retryable?
-                if r.status_code in retryable or (500 <= r.status_code < 600):
-                    time.sleep(delay + random.uniform(0, 0.5))
-                    delay = min(delay * 1.8, 20)
-                    continue
-
-                # non-retryable → raise with message
-                try:
-                    msg = r.json()
-                except Exception:
-                    msg = r.text
-                raise RuntimeError(f"DeepL error {r.status_code}: {msg}")
-
-            except requests.RequestException as e:
-                if attempt == max_retries:
-                    raise
-                time.sleep(delay + random.uniform(0, 0.5))
-                delay = min(delay * 1.8, 20)
-
-    # Fallback (should not usually happen)
-    return texts
+    out = tokenizer.batch_decode(generated, skip_special_tokens=True)
+    # 앞뒤 공백 정리 + NFC 정규화
+    return [nfc(t) for t in out]
 
 # ------------------- Record Translation -----------------------
 
 def translate_record(
     rec: Dict[str, Any],
-    api_key: str,
+    tokenizer: MarianTokenizer,
+    model: MarianMTModel,
+    device: torch.device,
     batch_size: int,
     protect: bool,
     cache: Dict[str, str],
@@ -157,21 +175,21 @@ def translate_record(
         enqueue("Related Subjects", s, i)
     enqueue("Definition", defin)
 
-    # Call DeepL in batches
+    # Call Marian in batches
     if queue:
         if protect:
             prot, maps = protect_acronyms(queue)
             translated: List[str] = []
             for i in range(0, len(prot), batch_size):
                 chunk = prot[i:i+batch_size]
-                tr = deepl_translate_batch_auto(chunk, api_key)
+                tr = marian_translate_batch(chunk, tokenizer, model, device)
                 translated.extend(tr)
             translated = restore_acronyms(translated, maps)
         else:
             translated = []
             for i in range(0, len(queue), batch_size):
                 chunk = queue[i:i+batch_size]
-                tr = deepl_translate_batch_auto(chunk, api_key)
+                tr = marian_translate_batch(chunk, tokenizer, model, device)
                 translated.extend(tr)
 
         # write-back & cache
@@ -215,17 +233,16 @@ def count_lines(path: str) -> int:
 # ----------------------------- Main ---------------------------
 
 def main():
-    ap = argparse.ArgumentParser(description="Translate GND (6 fields) to EN via DeepL FREE (auto-detect)")
+    ap = argparse.ArgumentParser(description="Translate GND (6 fields) to EN via Helsinki-NLP/opus-mt-de-en")
     ap.add_argument("--input", required=True, help="Input JSONL path")
     ap.add_argument("--output", required=True, help="Output JSONL path")
-    ap.add_argument("--batch-size", type=int, default=30, help="Batch size per API call")
+    ap.add_argument("--batch-size", type=int, default=16, help="Batch size per model call (texts)")
     ap.add_argument("--protect-acronyms", action="store_true", help="Protect ALL-CAPS 2–4 letter acronyms")
     ap.add_argument("--resume", action="store_true", help="Skip already written lines and append")
     args = ap.parse_args()
 
-    api_key = os.environ.get("DEEPL_API_KEY")
-    if not api_key:
-        raise SystemExit("DEEPL_API_KEY not set. Run: export DEEPL_API_KEY='YOUR_DEEPL_FREE_KEY'")
+    # 모델 로드
+    tokenizer, model, device = load_marian_model()
 
     # progress length
     try:
@@ -250,7 +267,7 @@ def main():
 
     lines = list(iter_jsonl(args.input))
     with open(args.output, mode, encoding="utf-8") as fout:
-        for idx, line in enumerate(tqdm(lines, total=total_lines, desc="Translating (DeepL FREE auto)"), start=1):
+        for idx, line in enumerate(tqdm(lines, total=total_lines, desc="Translating (Marian DE→EN)"), start=1):
             processed += 1
             if args.resume and idx <= start_skip:
                 continue
@@ -258,7 +275,9 @@ def main():
                 rec = json.loads(line)
                 out_rec = translate_record(
                     rec=rec,
-                    api_key=api_key,
+                    tokenizer=tokenizer,
+                    model=model,
+                    device=device,
                     batch_size=args.batch_size,
                     protect=args.protect_acronyms,
                     cache=cache,
