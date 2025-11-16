@@ -14,38 +14,42 @@
 # GND Dataset
 
 ```bash
-cleaned_data/GND/
+processed_data/GND/
 │
-├── cleaned_GND.jsonl
-├── detect_de.csv
-├── german_to_english.csv
+├── cleaning/
+│   └── cleaned_GND.jsonl
 │
-├── translated_GND.jsonl
-├── translated_2_GND.jsonl
-├── translated_3_GND.jsonl
+├── translating/
+│   ├── detect_de.csv
+│   ├── detect_de.numbers
+│   ├── german_to_english.csv
+│   ├── translated_GND.jsonl
+│   ├── translated_2_GND.jsonl
+│   └── translated_3_GND.jsonl
 │
-├── subject_ids.json
-├── subject_texts.json
-└── subject_embeddings.npy
+└── embedding/
+    ├── subject_ids.json
+    ├── subject_texts.json
+    └── subject_embeddings.npy
 ```
 
 ```bash
-Raw GND → cleaned_GND.jsonl
-        → translated_*_GND.jsonl    (translation passes)
-        → detect_de.csv            (language detection)
-        → german_to_english.csv    (verified mapping)
-        → subject_texts.json       **(final English labels)**
-        → subject_ids.json         (subject vocabulary)
-        → subject_embeddings.npy   (SBERT embeddings)
+Raw GND JSON → cleaning/cleaned_GND.jsonl
+             → translating/detect_de.csv            (auto language detection)
+             → translating/german_to_english.csv    (manual/verified mapping)
+             → translating/translated_*_GND.jsonl   (progressive translation passes)
+             → embedding/subject_texts.json         **final English subject labels**
+             → embedding/subject_ids.json           list of subject identifiers
+             → embedding/subject_embeddings.npy     SBERT embeddings for subjects
 ```
 
-- `cleaned_GND.jsonl` : Cleaned version of the original GND dataset.
-- `detect_de.csv` : Automatic language detection results for each GND label. To identify which labels still required translation.
-- `german_to_english.csv` : German → English mapping table.
-- `translated_GND.jsonl`, `translated_2_GND.jsonl`, `translated_3_GND.jsonl` : translated version of the GND subjects. `translated_3_GND.jsonl` is the final result.
-- `subject_ids.json` : Final list of all subject IDs. Defines the subject label vocabulary
-- `subject_texts.json` : Final English subject labels (clean + verified + standardized). English text for each subject (used for embedding + metadata)
-- `subject_embeddings.npy` : Final subject embedding matrix. Ready-to-use subject embedding matrix
+- `cleaning/cleaned_GND.jsonl` : Cleaned version of the original GND dataset.
+- `translating/detect_de.csv ` : Automatic language detection results for each GND label. To identify which labels still required translation.
+- `translating/german_to_english.csv` : German → English mapping table.
+- `translating/translated_*_GND.jsonl` : Translated version of the GND subjects. `translated_3_GND.jsonl` is the final result.
+- `embedding/subject_texts.json` : Final list of all subject IDs. Defines the subject label vocabulary
+- `embedding/subject_ids.json` : Final English subject labels (clean + verified + standardized). English text for each subject (used for embedding + metadata)
+- `embedding/subject_embeddings.npy` : Final subject embedding matrix. Ready-to-use subject embedding matrix
 
 ## subject_ids.json
 ```json
@@ -73,3 +77,58 @@ Raw GND → cleaned_GND.jsonl
 ## subject_embeddings.npy
 - A NumPy matrix containing the SBERT (MiniLM-L6-v2) embeddings for every subject in `subject_ids.json`.
 - Vector representation for each subject
+
+# TIBKAT Dataset
+
+```bash
+processed_data/TIBKAT/
+│
+├── cleaning/              # JSON-LD → unified JSONL (per type/lang)
+│   └── ...                # (intermediate files, mostly for reproducibility)
+│
+├── translating/
+│   ├── train/
+│   │   └── ...
+│   │
+│   ├── test/
+│   │   └── ...
+│   │
+│   ├── train_all.jsonl    # merged train split (all types, de+en, fully translated)
+│   └── test_all.jsonl     # merged test split (all types, de+en, fully translated)
+│
+└── embedding/
+    ├── tibkat_train_embeddings.npy
+    ├── tibkat_train_ids.json
+    ├── tibkat_test_embeddings.npy
+    └── tibkat_test_ids.json
+```
+
+```bash
+Raw TIBKAT JSON-LD
+    → cleaning/            (per-type JSONL: Article/Book/Conference/Report/Thesis, de/en)
+    → translating/train/*.jsonl, translating/test/*.jsonl
+        (German → English translation of content.text + title)
+    → train_all.jsonl, test_all.jsonl    (merged + fully English text)
+    → tibkat_*_ids.json                  (paper_id list per split)
+    → tibkat_*_embeddings.npy            (MiniLM embeddings per split)
+```
+
+- `cleaning/` : Cleaned version of the original TIBKAT dataset.
+- `translating/` : Translated version of the TIBKAT subjects.
+- `embedding/` : Ready-to-use embeddings for the TIBKAT papers (one vector per paper)
+
+## tibkat_*_ids.json
+```json
+[
+  "TIBKAT%3A72999130X",
+  "TIBKAT%3A1666713376",
+  "TIBKAT%3A168396733X",
+  ...
+]
+```
+- A list of paper_id values for each split (train / test).
+- The index in this list matches the row index in the corresponding embedding matrix.
+
+## tibkat_*_embeddings.npy
+- SBERT embeddings for each paper
+- Input text: content.text
