@@ -4,11 +4,11 @@ import numpy as np
 from tqdm import tqdm
 from sentence_transformers import SentenceTransformer
 
-INPUT_JSONL = "cleaned_data/GND/translated_3_GND.jsonl"
-OUT_DIR = "cleaned_data"
-SUBJ_EMB_PATH = os.path.join(OUT_DIR, "GND/subject_embeddings.npy")
-SUBJ_IDS_PATH = os.path.join(OUT_DIR, "GND/subject_ids.json")
-SUBJ_TEXTS_PATH = os.path.join(OUT_DIR, "GND/subject_texts.json")
+INPUT_JSONL = "processed_data/GND/translating/translated_4_GND.jsonl"
+OUT_DIR = "processed_data/GND/embedding"
+SUBJ_EMB_PATH = os.path.join(OUT_DIR, "subject_embeddings.npy")
+SUBJ_IDS_PATH = os.path.join(OUT_DIR, "subject_ids.json")
+SUBJ_TEXTS_PATH = os.path.join(OUT_DIR, "subject_texts.json")
 
 os.makedirs(OUT_DIR, exist_ok=True)
 
