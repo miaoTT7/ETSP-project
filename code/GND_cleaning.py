@@ -13,7 +13,7 @@ KEEP_KEYS = [
     "Definition",
 ]
 
-DEFAULT_REQUIRED = ["Code", "Name", "Definition"]  # --strict 시 기본 필수 필드
+DEFAULT_REQUIRED = ["Code", "Name"]
 
 def nfc(s: str) -> str:
     return unicodedata.normalize("NFC", s).strip()
