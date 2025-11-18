@@ -4,8 +4,8 @@ import numpy as np
 from tqdm import tqdm
 from sentence_transformers import SentenceTransformer
 
-INPUT_JSONL = "processed_data/GND/cleaning/cleaned_2_GND.jsonl"
-OUT_DIR = "processed_data/GND/embedding_2"
+INPUT_JSONL = "processed_data/GND/translating/translated_6_GND.jsonl"
+OUT_DIR = "processed_data/GND/embedding"
 SUBJ_EMB_PATH = os.path.join(OUT_DIR, "subject_embeddings.npy")
 SUBJ_IDS_PATH = os.path.join(OUT_DIR, "subject_ids.json")
 SUBJ_TEXTS_PATH = os.path.join(OUT_DIR, "subject_texts.json")
@@ -51,6 +51,7 @@ embeddings = model.encode(
     batch_size=64,
     show_progress_bar=True,
     convert_to_numpy=True,
+    normalize_embeddings=True,
 )
 
 print("Embeddings shape:", embeddings.shape)  # (num_subjects, embedding_dim)
