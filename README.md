@@ -26,7 +26,9 @@ processed_data/GND/
 │   ├── translated_GND.jsonl
 │   ├── translated_2_GND.jsonl
 │   ├── translated_3_GND.jsonl
-│   └── translated_4_GND.jsonl
+│   ├── translated_4_GND.jsonl
+│   ├── translated_5_GND.jsonl
+│   └── translated_6_GND.jsonl
 │
 └── embedding/
     ├── subject_ids.json
@@ -47,7 +49,7 @@ Raw GND JSON → cleaning/cleaned_GND.jsonl
 - `cleaning/cleaned_GND.jsonl` : Cleaned version of the original GND dataset.
 - `translating/detect_de.csv ` : Automatic language detection results for each GND label. To identify which labels still required translation.
 - `translating/german_to_english.csv` : German → English mapping table.
-- `translating/translated_*_GND.jsonl` : Translated version of the GND subjects. `translated_4_GND.jsonl` is the final result.
+- `translating/translated_*_GND.jsonl` : Translated version of the GND subjects. `translated_6_GND.jsonl` is the final result.
 - `embedding/subject_texts.json` : Final list of all subject IDs. Defines the subject label vocabulary
 - `embedding/subject_ids.json` : Final English subject labels (clean + verified + standardized). English text for each subject (used for embedding + metadata)
 - `embedding/subject_embeddings.npy` : Final subject embedding matrix. Ready-to-use subject embedding matrix
