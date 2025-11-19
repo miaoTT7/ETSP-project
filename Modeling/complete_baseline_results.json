@@ -1,0 +1,105 @@
+{
+  "method": "baseline",
+  "timestamp": "2025-11-19 23:38:44",
+  "evaluation_time_minutes": 0.29401785135269165,
+  "purpose_1_subject_indexing": {
+    "method": "embedding_based_retrieval",
+    "results": {
+      "1": {
+        "precision": 0.03119163242435562,
+        "recall": 0.014871261721870218,
+        "f1": 0.020140242505929124,
+        "papers_evaluated": 5354
+      },
+      "3": {
+        "precision": 0.020109575395343044,
+        "recall": 0.027457015734594716,
+        "f1": 0.023215829216672108,
+        "papers_evaluated": 5354
+      },
+      "5": {
+        "precision": 0.015465072842734403,
+        "recall": 0.03585215844520251,
+        "f1": 0.021608969463426515,
+        "papers_evaluated": 5354
+      }
+    }
+  },
+  "purpose_2_paper_recommendation": {
+    "method": "embedding_similarity",
+    "results": {
+      "5": {
+        "accuracy": 0.2244303324617109,
+        "papers_evaluated": 5354
+      },
+      "10": {
+        "accuracy": 0.1847777362719462,
+        "papers_evaluated": 5354
+      },
+      "20": {
+        "accuracy": 0.14663802764288383,
+        "papers_evaluated": 5354
+      }
+    }
+  },
+  "purpose_3_explanation_generation": {
+    "method": "rule_based_templates",
+    "sample_explanations": {
+      "TIBKAT%3A1758205997": {
+        "predicted_subjects": [
+          "gnd:4121208-3",
+          "gnd:4329026-7",
+          "gnd:4256903-5",
+          "gnd:7700528-4",
+          "gnd:4115688-2"
+        ],
+        "explanation": "This paper is classified under the subjects: General, Interdisciplinary general terms. Design is a purposeful intellectual and creative achievement, as a preparation of an object to be developed later on. Design is considered to be a key activity in architecture, landscape architecture urban design, design, engineering sciences. The design, as the result of a design process, can remain a purely mental idea. In general, however, the concept of design is understood as a representation and presentation in the form of texts, drawings, graphics, models and calculations., Architecture. International Urban Design Ideas Competition 1993, and Architecture. International Urban Design Ideas Competition 1957/58. These subjects were selected based on semantic similarity to the paper's content."
+      },
+      "TIBKAT%3A1664544321": {
+        "predicted_subjects": [
+          "gnd:1245396307",
+          "gnd:125499985X",
+          "gnd:4555675-1",
+          "gnd:4367895-6",
+          "gnd:7723945-3"
+        ],
+        "explanation": "This paper is classified under the subjects: General geology, geophysics. In the Siberian taiga by thawing the permafrost created forest clearings with subsequent quilting, Geography, local and regional studies (general). Russian expedition research project in the area of Volga, Don and the Caspian Sea; since 2015; winner of the international ecology award \u00abEcoWorld\u00bb-2019, and Physical geography. Well-preserved witnesses former glacier activity i.e. landscape. These subjects were selected based on semantic similarity to the paper's content."
+      },
+      "TIBKAT%3A212319868": {
+        "predicted_subjects": [
+          "gnd:4346327-7",
+          "gnd:4510652-6",
+          "gnd:1173123512",
+          "gnd:4299533-4",
+          "gnd:4510651-4"
+        ],
+        "explanation": "This paper is classified under the subjects: Environmental protection, environmental pollution. Only for potential environmental damage (not yet reported), Environmental protection, environmental pollution. Terminus of ecosystem research, and Environmental protection, environmental pollution. Total of all non-genetic, endogenous and exogenous environmental influences to which an individual is exposed for life. These subjects were selected based on semantic similarity to the paper's content."
+      },
+      "TIBKAT%3A768496012": {
+        "predicted_subjects": [
+          "gnd:7531218-9",
+          "gnd:7531221-9",
+          "gnd:4455389-4",
+          "gnd:7635475-1",
+          "gnd:1305185862"
+        ],
+        "explanation": "This paper is classified under the subjects: IT products (hardware and software products). Software for mobile computers, IT products (hardware and software products). Smartphone or Pocket PC from T-Mobile, and Computer science, data processing. Mobile agents are programs that execute jobs for one user. To do this, they are able to act autonomously and migrate from one computer to another, or to be transferred to a remote computer and brought to execution there.. These subjects were selected based on semantic similarity to the paper's content."
+      },
+      "TIBKAT%3A1023439158": {
+        "predicted_subjects": [
+          "gnd:1160327785",
+          "gnd:4256903-5",
+          "gnd:1217341587",
+          "gnd:4381059-7",
+          "gnd:4125924-5"
+        ],
+        "explanation": "This paper is classified under the subjects: Architecture. Picture niche with raised floor in the Japanese house for the display of individual works of art, Architecture. International Urban Design Ideas Competition 1957/58, and Local buildings. Extravagant, seemingly useless form of construction and garden art expression in architectures. These subjects were selected based on semantic similarity to the paper's content."
+      }
+    }
+  },
+  "data_coverage": {
+    "tibkat_subjects": 5563,
+    "available_in_gnd": 5563,
+    "coverage": 1.0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "results": {
+    "1": {
+      "precision": 0.03119163242435562,
+      "recall": 0.014871261721870218,
+      "f1": 0.020140242505929124,
+      "papers_evaluated": 5354
+    },
+    "3": {
+      "precision": 0.020109575395343044,
+      "recall": 0.027457015734594716,
+      "f1": 0.023215829216672108,
+      "papers_evaluated": 5354
+    },
+    "5": {
+      "precision": 0.015465072842734403,
+      "recall": 0.03585215844520251,
+      "f1": 0.021608969463426515,
+      "papers_evaluated": 5354
+    }
+  },
+  "data_coverage": {
+    "tibkat_subjects": 5563,
+    "available_in_gnd": 5563,
+    "coverage": 1.0
+  },
+  "evaluation_time_minutes": 0.08401139974594116
+}
