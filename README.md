@@ -22,6 +22,21 @@ ETSP-project/
 └── README.md
 ```
 
+# How to run the code
+```
+# dependencies
+
+python -m venv venv
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+pip install -r requirements.txt
+
+# run the web_app
+cd web_app
+python app.py
+```
 ## GND Dataset
 
 ### Directory Structure
@@ -156,4 +171,5 @@ Raw TIBKAT JSON-LD
 ### tibkat_*_embeddings.npy
 - SBERT embeddings for each paper
 - Input text: content.text
+
 
