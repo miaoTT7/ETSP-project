@@ -1,4 +1,6 @@
 # ETSP-project
+Because the model files are too big, we upload the whole project to Google Drive. The link is as follows.
+https://drive.google.com/drive/folders/1Gkd00jvjH6rKgxrOtPXtFPA1S-n2cUno?usp=sharing
 
 ## Directory Structure
 
