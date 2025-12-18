@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+.env
+.vscode/
+venv/
+*.pyc
+*.pyo
+.pytest_cache/
+.vscode/
+.gitattributes
+/processed_data/
+/raw_data/
+/modeling/models/

@@ -1,0 +1,1024 @@
+{
+  "results": [
+    {
+      "query_paper_id": "TIBKAT:688924379",
+      "query_title": "Chirale Pincer-Liganden auf Kohlenhydratbasis",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:657422975",
+          "title": "Partialsynthese maßgeschneiderter Photosensibilisatoren vom Chlorintyp und Studien zur pharmazeutischen Anwendung in der Photodynamischen Therapie",
+          "authors": "Bauer, Daniela",
+          "year": "Unknown",
+          "similarity": 0.4838962572445065,
+          "explanation": "The following two papers are likely related to the query paper:"
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:689844891",
+          "title": "Novel cyclic α-phosphino-α-amino acids and α-phosphonium glycolates, P,O ̄ligands and nickel complexes : syntheses, structural characterization, properties and use in catalysis",
+          "authors": "Basvani, Kaleswara Rao",
+          "year": "Unknown",
+          "similarity": 0.44965730406828247,
+          "explanation": "No specific shared topics identified."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:1668273225",
+          "title": "The chemistry of nitrogen-rich functional groups",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.4478694361923455,
+          "explanation": "The chemistry of nitrogen-rich functional groups has been recommended for the query paper."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:522871755",
+          "title": "Physical and chemical characteristics of oils, fats, and waxes",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.43749341700889294,
+          "explanation": "The recommended paper is Physical and chemical characteristics of oils, fats, and waxes."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:830092315",
+          "title": "Development of synthetic strategies towards libraries of heterocyclic and bicyclic inhibitors of Cdc25A & development of solid phase synthesis of cyclic peptides",
+          "authors": "Luo, Hao",
+          "year": "Unknown",
+          "similarity": 0.4246571774399304,
+          "explanation": "This is the paper cited in the query."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:1843189585",
+      "query_title": "All and nothing to say : the state of debate in digital modernism",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:563132639",
+          "title": "Digitize this book! : the politics of new media, or why we need Open Access now",
+          "authors": "gnd:138154554",
+          "year": "Unknown",
+          "similarity": 0.7891547619274354,
+          "explanation": "The state of debate in digital modernism is examined in this paper."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:1653883162",
+          "title": "The new public: How bots, citizens and big data change journalism",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.7748111845495895,
+          "explanation": "The new public: How bots, citizens and big data change journalism is a paper about digital change and new media and was originally published in 2015."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:1858284244",
+          "title": "Distinct public: debate cultures in political and media change",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.7588303729127754,
+          "explanation": "This paper provides a detailed examination of debate cultures in the digital age."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:169449165X",
+          "title": "The quirks of digital culture",
+          "authors": "gnd:140245626",
+          "year": "Unknown",
+          "similarity": 0.754888496816029,
+          "explanation": "The quirks of digital culture is a book on digital culture."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:1700567446",
+          "title": "Sociology of the Digital - Digital Sociology?",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.7527131781214798,
+          "explanation": "A social sociology of the digital is a sociology that is based on the study of the digital."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:1611820243",
+      "query_title": "World of bacteria, archaea and viruses : an introductory textbook on microbiology",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:613654676",
+          "title": "Handbook of microbiological media",
+          "authors": "gnd:141518359",
+          "year": "Unknown",
+          "similarity": 0.7527998540598483,
+          "explanation": "The World of bacteria, archaea and viruses : an introductory textbook on microbiology by C. R. H. Hartmann is an introductory textbook on microbiology, published in 1890."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:1733589449",
+          "title": "Plant microbiome paradigm",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.695133501465119,
+          "explanation": "The following are all topics covered in the above papers:"
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:1738637522",
+          "title": "Symbiotic soil microorganisms : biology and applications",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.6518037258597311,
+          "explanation": "A book on the subject of microorganisms is recommended, since the subject is covered in a few articles."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:660971720",
+          "title": "Topics in ecological and environmental microbiology",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.6361344216330946,
+          "explanation": "The World of bacteria, archaea and viruses is an introductory textbook on microbiology."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:798224541",
+          "title": "Environmental microbiology",
+          "authors": "gnd:1052830994; gnd:1052831125; gnd:1051667747",
+          "year": "Unknown",
+          "similarity": 0.6322196667783986,
+          "explanation": "The author is a scientist, and this book will be of interest to a reader with an interest in the study of microbes."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:1664082476",
+      "query_title": "Renewable energy and climate change",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:1648796923",
+          "title": "Renewable energy technology",
+          "authors": "gnd:121555283",
+          "year": "Unknown",
+          "similarity": 0.736548647996434,
+          "explanation": "This paper discusses the importance of renewable energy in addressing climate change, while also examining the relationship between energy technology and climate change."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:1664568263",
+          "title": "Regenerative energy systems : Technology - Calculation - Climate protection",
+          "authors": "gnd:2007034-2; gnd:114654263",
+          "year": "Unknown",
+          "similarity": 0.7045078762730494,
+          "explanation": "The author of this paper recommends that the reader research the topic of renewable energy systems : technology - calculation - climate protection."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:747171084",
+          "title": "Renewable energies and climate protection : backgrounds, techniques and planning, economy and ecology, energy transition",
+          "authors": "gnd:114654263",
+          "year": "Unknown",
+          "similarity": 0.6994632811842716,
+          "explanation": "Renewable energy and climate protection : backgrounds, techniques and planning, economy and ecology, energy transition is a rebuttal to the question of whether renewable energy and climate protection is a useful tool in combating climate change."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:1615254919",
+          "title": "The future of energy: the answer of science",
+          "authors": "gnd:2019024-4",
+          "year": "Unknown",
+          "similarity": 0.6685801023111431,
+          "explanation": "This paper is a comprehensive review of the current state of renewable energy technologies."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:734666977",
+          "title": "Renewable energy systems : Technology – Calculation – Simulation",
+          "authors": "gnd:114654263",
+          "year": "Unknown",
+          "similarity": 0.663424243452466,
+          "explanation": "This paper is an overview of renewable energy systems."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:1655042998",
+      "query_title": "Handbook of Modern Item Response Theory",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:1658317890",
+          "title": "The Basics of Item Response Theory Using R",
+          "authors": "Baker, Frank B.",
+          "year": "Unknown",
+          "similarity": 0.6781615171969475,
+          "explanation": "The book on the theoretical foundations of item response theory, The Basics of Item Response Theory Using R, was written in 2001."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:1004788878",
+          "title": "Forecasting air travel demand : looking at China",
+          "authors": "Zheng, Yafei",
+          "year": "Unknown",
+          "similarity": 0.5955629412567653,
+          "explanation": "The author of this paper is Yafei Zheng."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:1650434723",
+          "title": "Statistical Models for Test Equating, Scaling, and Linking",
+          "authors": "gnd:122881923",
+          "year": "Unknown",
+          "similarity": 0.5867702433531803,
+          "explanation": "Statistical Models for Test Equating, Scaling, and Linking is the best book for a query paper."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:784889309",
+          "title": "Robust response surfaces, regression, and positive data analyses",
+          "authors": "Das, Rabindra Nath",
+          "year": "Unknown",
+          "similarity": 0.5403829180303656,
+          "explanation": "The authors of Robust Response Surfaces, regression, and positive data analyses are both researchers in statistics."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:165731023X",
+          "title": "Experimental Design : With Applications in Management, Engineering and the Sciences",
+          "authors": "Celli, Giovana B.; Maurer, Robert E.; Berger, Paul D.",
+          "year": "Unknown",
+          "similarity": 0.539978842844719,
+          "explanation": "The authors of the paper \"Handbook of Modern Item Response Theory\" recommend that the reader read the paper \"Experimental Design : With Applications in Management, Engineering and the Sciences\" instead."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:1648808514",
+      "query_title": "Treatment of Cooling Water",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:553815814",
+          "title": "Effects of different cooling methods on microclimate and plant growth in greenhouses in the tropics",
+          "authors": "gnd:140407146",
+          "year": "Unknown",
+          "similarity": 0.7020205484264683,
+          "explanation": "This paper investigates the effects of different cooling methods on microclimate and plant growth in greenhouses in the tropics."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:821703552",
+          "title": "Seafood chilling, refrigeration and freezing : science and technology",
+          "authors": "Gökoğlu, Nalan; Yerlikaya, Pınar",
+          "year": "Unknown",
+          "similarity": 0.6938118870999221,
+          "explanation": "The Seafood chilling, refrigeration and freezing : science and technology is a reference book on the subject of cooling water treatment."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:777414767",
+          "title": "Investigation of various supply and cooling possibilities in fattening pig stables",
+          "authors": "gnd:1046821121",
+          "year": "Unknown",
+          "similarity": 0.6791227996945755,
+          "explanation": "The paper \"Information of various supply and cooling possibilities in fattening pig stables\" is similar to the paper \"An Investigation of various supply and cooling possibilities in fattening pig stables\" and has similar content."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:1748331965",
+          "title": "Adaptive cooling of integrated circuits using digital microfluidics",
+          "authors": "Pamula, Vamsee K.; Chakrabarty, Krishnendu; Paik, Philip Y.",
+          "year": "Unknown",
+          "similarity": 0.47815481779974284,
+          "explanation": "The paper that answers the query paper is an article in the same field as the one that answers the query paper."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:1663790922",
+          "title": "Cooling energy solutions for buildings and cities",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.46783251996949005,
+          "explanation": "The following article is a review of the literature on cooling energy solutions for buildings and cities."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:472206613",
+      "query_title": "Perspectives of the design of work and technology : Festschrift für Peter Brödner",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:1694714098",
+          "title": "Prototyping society - for the advance of the future",
+          "authors": "gnd:141933127",
+          "year": "Unknown",
+          "similarity": 0.6917878605913883,
+          "explanation": "The paper by Peter Brödner is a good choice for the question."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:1614900558",
+          "title": "Design science research methods and patterns : innovating information and communication technology",
+          "authors": "gnd:1214008704; gnd:1214009263",
+          "year": "Unknown",
+          "similarity": 0.6822944171160628,
+          "explanation": "Design science research methods and patterns: innovating information and communication technology is a paper written by the same people and similar topics."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:880408960",
+          "title": "One or zero: how to lead your business into the digital future with Digital@Scale",
+          "authors": "gnd:2009426-7",
+          "year": "Unknown",
+          "similarity": 0.6814391021269,
+          "explanation": "The authors of this article disagree on the topic of work and technology."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:1655521349",
+          "title": "Un/Certain Futures : Roles of Design in Social Transformation Processes",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.6776994050583866,
+          "explanation": "This paper is based on a review of the Festschrift für Peter Brödner."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:853835241",
+          "title": "Book retail strategies in the digital market : reactions of the large book retail chains to technological innovations",
+          "authors": "gnd:1011828790; gnd:1065173075",
+          "year": "Unknown",
+          "similarity": 0.6672874593590581,
+          "explanation": "The paper on book retail strategies in the digital market is a similar paper to the one on perspectives of the design of work and technology."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:1788870794",
+      "query_title": "An app for everything : ideas for physics with the smartphone",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:1653206993",
+          "title": "Virtual and Augmented Reality (VR / AR) : Basics and Methods of Virtual and Augmented Reality",
+          "authors": "gnd:1047974126",
+          "year": "Unknown",
+          "similarity": 0.6834959144135986,
+          "explanation": "A paper on virtual and augmented reality (VR/AR) : Basics and Methods of Virtual and Augmented Reality (VR/AR) is recommended for the query paper."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:1607326507",
+          "title": "Virtual and Augmented Reality (VR/AR) : Basics and Methods of Virtual and Augmented Reality",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.6810585700559999,
+          "explanation": "Physicists and engineers are using smartphones to help solve many of today's problems."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:1737207540",
+          "title": "Multimedia and sensory input for augmented, mixed, and virtual reality",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.6523834474803628,
+          "explanation": "An app for everything : ideas for physics with the smartphone is a paper on multimodal sensory input for augmented, mixed, and virtual reality."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:1852234970",
+          "title": "Virtual, augmented and mixed reality : 15th international conference, VAMR 2023 : held as part of the 25th HCI international conference, HCII 2023, Copenhagen, Denmark, July 23-28, 2023 : proceedings",
+          "authors": "gnd:1297339452",
+          "year": "Unknown",
+          "similarity": 0.6460349480778034,
+          "explanation": "The paper 'Virtual, augmented and mixed reality : 15th international conference, VAMR 2023 : held as part of the 25th HCI international conference, HCII 2023' is related to the query paper."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:1768266220",
+          "title": "Emerging advancements for virtual and augmented reality in healthcare",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.6402897502101584,
+          "explanation": "A paper examining the impact of smartphone-based applications of physics on healthcare would be appropriate."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:1651343098",
+      "query_title": "Liability, impossibility of attribution and evidence",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:71687315X",
+          "title": "Self-portrait with Bonaparte : Roman",
+          "authors": "gnd:123263034",
+          "year": "Unknown",
+          "similarity": 0.69264828597071,
+          "explanation": "This paper is not relevant to the question \"How does the scientific method explain the attribution of a scientific finding to someone else?.\""
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:1688821155",
+          "title": "Überlange Verfahrensdauer und Verhältnismäßigkeit",
+          "authors": "gnd:1203587392; gnd:36175-6",
+          "year": "Unknown",
+          "similarity": 0.577827896834415,
+          "explanation": "This is a comparison of two papers on the topic of experimentation."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:1588347524",
+          "title": "Semantics / Klaus von Heusinger, Claudia Maienborn, Paul Portner (eds.) ; 5: Sentence and information structure",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.5548055349157992,
+          "explanation": "Semantics is a book that attempts to provide a logical framework for the study of sentence structure and information structure."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:1759193070",
+          "title": "Exclusion from State Party Financing: Legality, Legitimacy and Consequences",
+          "authors": "gnd:1234997347; gnd:13388-7",
+          "year": "Unknown",
+          "similarity": 0.5478340476410043,
+          "explanation": "This paper offers an alternative to the paper on state party financing."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:1819145549",
+          "title": "Bedürftige Erben : Testierfreiheit versus Sittenwidrigkeit bei Bedürftigen- und Überschuldetentestamenten",
+          "authors": "gnd:1290192227; gnd:2024175-6",
+          "year": "Unknown",
+          "similarity": 0.5426862139218627,
+          "explanation": "In the context of liability, impossibility of attribution and evidence, this paper is a comparison of the experience of the German welfare state with that of the US and the EU in the United States."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:1695745469",
+      "query_title": "Windows Server for Dummies",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:1655573284",
+          "title": "The Accidental SysAdmin Handbook : A Primer for Entry Level IT Professionals",
+          "authors": "Kralicek, Eric",
+          "year": "Unknown",
+          "similarity": 0.6124568283670244,
+          "explanation": "The Accidental SysAdmin Handbook is a primer for entry level IT professionals."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:872446654",
+          "title": "The accidental SysAdmin handbook : a primer for entry level IT professionals",
+          "authors": "gnd:1119248973",
+          "year": "Unknown",
+          "similarity": 0.5721946873248129,
+          "explanation": "This article focuses on the Windows Server for Dummies book and its recommended companion The Accidental SysAdmin handbook."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:1614410453",
+          "title": "PowerShell for Microsoft SharePoint 2010 Administrators",
+          "authors": "Goude, Niklas; Karlsson, Mattias",
+          "year": "Unknown",
+          "similarity": 0.5339287065711806,
+          "explanation": "The article \"Windows Server for Dummies\" is intended for a beginner to Microsoft Windows Server 2010 administration, while the \"PowerShell for Microsoft SharePoint 2010 Administrators\" is intended for advanced SharePoint 2010 administrators."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:1739041607",
+          "title": "Building better PowerShell code : applying proven practices one tip at a time",
+          "authors": "gnd:122115561X",
+          "year": "Unknown",
+          "similarity": 0.5136773785431263,
+          "explanation": "This paper is a guide to the basic concepts and functions of Windows Server 2008 and Windows Server 2012. It covers the basics of Windows Server 2012 and Windows Server 2016 and includes a few of the more advanced features."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:37607650X",
+          "title": "Linux system administration : basics, concepts, application ; with 24 tables",
+          "authors": "Hammer, Carsten",
+          "year": "Unknown",
+          "similarity": 0.5096313721615247,
+          "explanation": "The Linux system administration book provides the reader with a thorough introduction to the basic concepts and applications of Linux, as well as a review of its user interface and features."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:717841510",
+      "query_title": "Adjoint Navier-Stokes methods for hydrodynamic shape optimization",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:1856479730",
+          "title": "Data management for decentralized maritime research and development data in the test field context",
+          "authors": "gnd:129555738X",
+          "year": "Unknown",
+          "similarity": 0.9137503259941185,
+          "explanation": "The authors of the paper cited in the query paper have researched on a topic related to architecture and preservation."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:646296965",
+          "title": "De Giorgi-Nash-Moser estimates for evolutionary partial integro-differential equations",
+          "authors": "gnd:124731074",
+          "year": "Unknown",
+          "similarity": 0.88499204955568,
+          "explanation": "The paper on de Giorgi-Nash-Moser estimates for evolutionary partial integro-differential equations is similar to the paper on Adjoint Navier-Stokes methods for hydrodynamic shape optimization."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:1806587785",
+          "title": "Reallabor post-war modernism : to deal with younger monuments",
+          "authors": "gnd:1293288918; gnd:1065973640",
+          "year": "Unknown",
+          "similarity": 0.8700089927742243,
+          "explanation": "Adjoint Navier-Stokes methods for hydrodynamic shape optimization is a paper on how to deal with younger monuments."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:1022191764",
+          "title": "Mobility management in Germany : a critical inventory",
+          "authors": "Rammert, Alexander; Sternkopf, Benjamin",
+          "year": "Unknown",
+          "similarity": 0.651679275961896,
+          "explanation": "The authors of this paper are Alexander Rammert and Benjamin Sternkopf."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:1668643138",
+          "title": "Houses make school : An architectural sociological analysis of built education",
+          "authors": "gnd:1191901858",
+          "year": "Unknown",
+          "similarity": 0.5822162031870635,
+          "explanation": "The author of this paper is invariant in the same research field as the author of the book Houses make school : An architectural sociological analysis of built education."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:749244259",
+      "query_title": "Physics Experiments Using PCs : A Guide for Instructors and Students",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:1602283281",
+          "title": "Basic experimental technology in physics",
+          "authors": "gnd:114907447",
+          "year": "Unknown",
+          "similarity": 0.8686603412359412,
+          "explanation": "The author of the paper that is the most similar to the query paper is a German-American."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:748945806",
+          "title": "Understanding Physics",
+          "authors": "Cassidy, David",
+          "year": "Unknown",
+          "similarity": 0.7434691651984396,
+          "explanation": "The author of Understanding Physics is a physicist."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:187772937X",
+          "title": "Experimentation practice in the spectrum of possibilities : A reconstructive analysis of experimenting practice in inclusive physics lessons",
+          "authors": "Katharina Fühner, Larissa",
+          "year": "Unknown",
+          "similarity": 0.7305878014913266,
+          "explanation": "This paper provides a comprehensive and balanced overview of the research that has been conducted in the field of experiments using computers."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:638143500",
+          "title": "Practical start LabView : 12 experiments with LabView show you the practical application",
+          "authors": "gnd:1076652336; gnd:1076651518",
+          "year": "Unknown",
+          "similarity": 0.7082941378053883,
+          "explanation": "The article \"Practical start LabView : 12 experiments with LabView show you the practical application\" by Kimberly and Peters is a comparison of two papers on the same topic."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:1843036282",
+          "title": "Introduction to nuclear reactor experiments",
+          "authors": "Pyeon, Cheol Ho; Endo, Tomohiro; Yamada, Takahiro; Wakabayashi, Genichiro",
+          "year": "Unknown",
+          "similarity": 0.7003862384650966,
+          "explanation": "The Physik section of the Science Citation Index (SCRI) has 2 other papers that are similar to the question paper."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:1646281063",
+      "query_title": "Sensation, Currility and Tabus in the Media",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:600575284",
+          "title": "Philosophy after the \"Medial Turn\" : Contributions to the Theory of Media Society",
+          "authors": "gnd:120863308",
+          "year": "Unknown",
+          "similarity": 0.8183836795048828,
+          "explanation": "The authors of this paper are not related to the subject of the question."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:821136585",
+          "title": "Mass media in Germany",
+          "authors": "gnd:120812738; gnd:122320840",
+          "year": "Unknown",
+          "similarity": 0.7220856480316572,
+          "explanation": "This paper examines the influence of mass media on media perceptions of gender, sexuality, and political issues in the digital age."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:775583901",
+          "title": "Departments in the age of media change and tabloidism : choice of topics as quality criteria",
+          "authors": "Rankl, Dagmar",
+          "year": "Unknown",
+          "similarity": 0.7002280771051359,
+          "explanation": "The author of this paper cites another paper in the same series: Departments in the age of media change and tabloidism : choice of topics as quality criteria."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:1655998366",
+          "title": "Mediatization and media socialization : processes - spaces - practices",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.6841579180458836,
+          "explanation": "Mediatization and media socialization : processes - spaces - practices"
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:250798123",
+          "title": "Media culture",
+          "authors": "gnd:119200716",
+          "year": "Unknown",
+          "similarity": 0.6755212865768994,
+          "explanation": "This is a re-edited version of the paper originally published in Unknown in 2009."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:1645282163",
+      "query_title": "The Infinite: Mathematicians Wrestle for a Concept",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:1611102820",
+          "title": "Mathematics for Natural Scientists : what you really need in the Bachelor and don't learn in school",
+          "authors": "gnd:133458164",
+          "year": "Unknown",
+          "similarity": 0.7030141942200194,
+          "explanation": "The Infinite: Mathematicians Wrestle for a Concept is a book that is a reworking of the book Mathematics for Natural Scientists."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:652932762",
+          "title": "The beginning of infinity : explanations that transform the world",
+          "authors": "Deutsch, David",
+          "year": "Unknown",
+          "similarity": 0.6943140305996239,
+          "explanation": "This article is a comparison of two books written by the same author on the same topic."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:1655618679",
+          "title": "Trick or Truth? : The Mysterious Connection Between Physics and Mathematics",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.6893014639548709,
+          "explanation": "The book 'Trick or Truth?' is the most recent book to deal with the same subject."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:74203335X",
+          "title": "Magnificent mistakes in mathematics",
+          "authors": "gnd:139732810; gnd:115590412",
+          "year": "Unknown",
+          "similarity": 0.6510235189832494,
+          "explanation": "The authors of Magnificent Mistakes in Mathematics are well known for their work on the infinite."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:1765213541",
+          "title": "Karl Popper's science and philosophy",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.6451777454668204,
+          "explanation": "The Infinite: Mathematicians Wrestle for a Concept is a book by Karl Popper, published in 1937."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:1741960045",
+      "query_title": "Smart Hospital : digital and empathic future medicine",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:1881132374",
+          "title": "Digitization in hospital: a knowledge-sociological study of the process and structural logics of a platform development for the monitoring of therapy in post-transplant care",
+          "authors": "gnd:1190667665",
+          "year": "Unknown",
+          "similarity": 0.8726158939044886,
+          "explanation": "Digitization in hospital: a knowledge-sociological study of the process and structural logics of a platform development for the monitoring of therapy in post-transplant care is the best choice to read the query paper."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:1811678351",
+          "title": "Digitization in social and health care : Future navigator for social and health care",
+          "authors": "Voigt, Daniela",
+          "year": "Unknown",
+          "similarity": 0.8564314459756679,
+          "explanation": "This paper is a review of the future of digitalization in social and health care."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:1788870557",
+          "title": "Management of digital transformation : A practical introduction",
+          "authors": "gnd:1062675045",
+          "year": "Unknown",
+          "similarity": 0.8522528938735198,
+          "explanation": "This paper is a comparison of the research papers that are relevant to the same question, and presents a practical introduction to the use of digital technologies in the healthcare sector."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:1890358967",
+          "title": "Digital Health und Recht : zu den rechtlichen Rahmenbedingungen der Digitalisierung des Gesundheitswesens",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.842082036014996,
+          "explanation": "Digital Health and Recht is a German book about the legal framework of the digitalization of the health sector."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:1746364963",
+          "title": "The digital transformation of the automotive industry : Drivers - Roadmap - Practice",
+          "authors": "gnd:1150676760",
+          "year": "Unknown",
+          "similarity": 0.8210940117666151,
+          "explanation": "The digital transformation of the automotive industry : Drivers - Roadmap - Practice is a recommended paper for the query paper \"Smart Hospital : digital and empathic future medicine\""
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:1645398196",
+      "query_title": "The physics of gamma-ray bursts",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:1650677448",
+          "title": "Relativistic Flows in Astrophysics",
+          "authors": "Guthmann, Axel W.",
+          "year": "Unknown",
+          "similarity": 0.718778871382681,
+          "explanation": "This article is about the theoretical background of the theory of gamma-ray bursts, but does not cover the physical phenomena that underlie them."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:1654663239",
+          "title": "Extreme States of Matter : High Energy Density Physics",
+          "authors": "Fortov, Vladimir E.",
+          "year": "Unknown",
+          "similarity": 0.6701798017918248,
+          "explanation": "This article's title is \"The physics of gamma-ray bursts\" and it is written by Vladimir Fortov."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:1684978696",
+          "title": "Lyman-alpha as an Astrophysical and Cosmological Tool : Saas-Fee Advanced Course 46. Swiss Society for Astrophysics and Astronomy",
+          "authors": "gnd:1201598524; gnd:1201598184; gnd:1201598680; gnd:1201598370",
+          "year": "Unknown",
+          "similarity": 0.6598389212425572,
+          "explanation": "The Physics of Gamma-Ray Bursts is a Query Paper. The author of this paper is a member of the International Astronomical Union."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:823809838",
+          "title": "Extragalactic jets from every angle : proceedings of the 313th Symposium of the International Astronomical Union held in Puerto Ayora, Galapagos Islands, Ecuador, September  15-19, 2014",
+          "authors": "gnd:1033-9",
+          "year": "Unknown",
+          "similarity": 0.6309132148420756,
+          "explanation": "The author of Extragalactic Jets from Every Angle is a member of the International Astronomical Union."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:1043831622",
+          "title": "Laboratory astrophysics : spectroscopy and instrumentation for the gas phase and the solid state",
+          "authors": "gnd:117402027X; gnd:36164-1",
+          "year": "Unknown",
+          "similarity": 0.6218157324173639,
+          "explanation": "The paper is about gamma-ray bursts, and is a reference book on the subject."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:1651785244",
+      "query_title": "Lecture Notes on O-Minimal Structures and Real Analytic Geometry",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:1659342856",
+          "title": "Dynamical and Geometric Aspects of Hamilton-Jacobi and Linearized Monge-Ampère Equations : VIASM 2016",
+          "authors": "Le, Nam Q.",
+          "year": "Unknown",
+          "similarity": 0.6307160856250922,
+          "explanation": "The authors of this paper are also the authors of the paper Lecture Notes on O-Minimal Structures and Real Analytic Geometry."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:723767173",
+          "title": "Poisson Structures",
+          "authors": "Laurent-Gengoux, Camille",
+          "year": "Unknown",
+          "similarity": 0.5937127284362352,
+          "explanation": "This is a list of all the books on the subject of Poisson structures."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:1851953809",
+          "title": "Differential equations, Fourier series, and Hilbert spaces : lecture notes at the University of Siena",
+          "authors": "gnd:1304107027",
+          "year": "Unknown",
+          "similarity": 0.5808869641361718,
+          "explanation": "Differential equations, Fourier series, and Hilbert spaces : lecture notes at the University of Siena is a book written by the University of Siena."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:1651857237",
+          "title": "Poisson Structures",
+          "authors": "Laurent-Gengoux, Camille",
+          "year": "Unknown",
+          "similarity": 0.5787523096906774,
+          "explanation": "The author of this paper is Laurent-Gengoux, Camille."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:665668228",
+          "title": "Variational problems in differential geometry : University of Leeds, 2009 ; [Workshop Variational Problems in Differential Geometry]",
+          "authors": "gnd:16329381-8",
+          "year": "Unknown",
+          "similarity": 0.5638097872635971,
+          "explanation": "Variational problems in differential geometry : University of Leeds, 2009 ; [Workshop Variational Problems in Differential Geometry] has been cited 56.4% by the query paper and is a recommended paper."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:644977760",
+      "query_title": "Partial Differential Equations and Spectral Theory : [The idea for this volume originated from an\"International Conference on Partial Differential Equations and Spectral Theoryʺ held in Goslar, Germany, August 31 to September 06, 2008]",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:1650434529",
+          "title": "Spectral and High Order Methods for Partial Differential Equations : Selected papers from the ICOSAHOM '09 conference, June 22-26, Trondheim, Norway",
+          "authors": "gnd:140381619",
+          "year": "Unknown",
+          "similarity": 0.8333371325861697,
+          "explanation": "This paper is a review of a book that is a re-examination of the research of the ICOSAHOM '09 conference."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:1851953809",
+          "title": "Differential equations, Fourier series, and Hilbert spaces : lecture notes at the University of Siena",
+          "authors": "gnd:1304107027",
+          "year": "Unknown",
+          "similarity": 0.76719674964525,
+          "explanation": "This book has the following topics:"
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:1655084348",
+          "title": "Hyperfunctions and Theoretical Physics : Rencontre de Nice, 21–30 Mai 1973",
+          "authors": "Pham, Frédéric",
+          "year": "Unknown",
+          "similarity": 0.736156174096818,
+          "explanation": "The paper with the highest similarity to the query paper is the paper with the lowest similarity."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:1655414968",
+          "title": "Introduction to Partial Differential Equations : A Computational Approach",
+          "authors": "gnd:1012216276",
+          "year": "Unknown",
+          "similarity": 0.7342595763752157,
+          "explanation": "This book is the recommended book for the query paper."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:1040733522",
+          "title": "Separation of variables and superintegrability : the symmetry of solvable systems",
+          "authors": "gnd:1067816976; gnd:1022191268; gnd:1161203613",
+          "year": "Unknown",
+          "similarity": 0.7253818493409311,
+          "explanation": "The idea for this volume originated from an\"International Conference on Partial Differential Equations and Spectral Theory held in Goslar, Germany, August 31 to September 06, 2008]"
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:837727235",
+      "query_title": "Chemically motivated Hubbard models: exact diagonalization, charge transfer and local approximation processes",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:1652403744",
+          "title": "Optical Absorption Spectra Calculated Using Linear-Scaling Density-Functional Theory",
+          "authors": "Ratcliff, Laura",
+          "year": "Unknown",
+          "similarity": 0.7673882569110829,
+          "explanation": "Authors: Ratcliff, Laura Authors: Numerisches Verfahren, Computersimulation, Density functionalism"
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:165734293X",
+          "title": "Computing the Optical Properties of Large Systems",
+          "authors": "Zuehlsdorff, Tim Joachim",
+          "year": "Unknown",
+          "similarity": 0.7356119469107821,
+          "explanation": "The paper is written by Zuehlsdorff, Tim Joachim, and is relevant to the query paper: Chemically motivated Hubbard models: exact diagonalization, charge transfer and local approximation processes."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:1694576329",
+          "title": "London dispersion forces in molecules, solids and nano-structures : an introduction to physical models and computational methods",
+          "authors": "gnd:1067949445",
+          "year": "Unknown",
+          "similarity": 0.7241294020741182,
+          "explanation": "The paper Chemically motivated Hubbard models: exact diagonalization, charge transfer and local approximation processes is recommended."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:1648540058",
+          "title": "Quantal Density Functional Theory II : Approximation Methods and Applications",
+          "authors": "gnd:12875642X",
+          "year": "Unknown",
+          "similarity": 0.5790646778296381,
+          "explanation": "A paper on Hubbard model resemblance and its approximation methods and applications."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:1650744250",
+          "title": "Full-Potential Electronic Structure Method : Energy and Force Calculations with Density Functional and Dynamical Mean Field Theory",
+          "authors": "Wills, John M.",
+          "year": "Unknown",
+          "similarity": 0.5427643072730088,
+          "explanation": "The Hubbard model is an efficient method for calculating the energy and force of a given electronic structure."
+        }
+      ]
+    },
+    {
+      "query_paper_id": "TIBKAT:1616388692",
+      "query_title": "Self-determined norm : feminism, prenatal diagnosis, abortion",
+      "recommendations": [
+        {
+          "rank": 1,
+          "paper_id": "TIBKAT:879981091",
+          "title": "Learn to argue against law",
+          "authors": "Gützlaff, Kathrin; Gloël, Rolf",
+          "year": "Unknown",
+          "similarity": 0.639930351668886,
+          "explanation": "This paper is about feminism, prenatal diagnosis, abortion."
+        },
+        {
+          "rank": 2,
+          "paper_id": "TIBKAT:1697219608",
+          "title": "Legal admissibility of medical participation in prohibited child-desiring treatments abroad",
+          "authors": "gnd:2000862-4; gnd:1212045246",
+          "year": "Unknown",
+          "similarity": 0.6328311331946471,
+          "explanation": "The authors of the supplementary article on the legal admissibility of medical participation in prohibited child-desiring treatments abroad are both authors of the query paper."
+        },
+        {
+          "rank": 3,
+          "paper_id": "TIBKAT:882895524",
+          "title": "The Government of Health : Fragments of a Genealogy of Liberal Governmentality",
+          "authors": "gnd:1127154974",
+          "year": "Unknown",
+          "similarity": 0.5425177748525404,
+          "explanation": "The Government of Health : Fragments of a Genealogy of Liberal Governmentality is a good choice for the query paper because it has a similarity of 54.3% with the query paper."
+        },
+        {
+          "rank": 4,
+          "paper_id": "TIBKAT:731376528",
+          "title": "Shamland: the poverty among us",
+          "authors": "gnd:130668184",
+          "year": "Unknown",
+          "similarity": 0.5407525396178605,
+          "explanation": "A comparison of the poverty rate in the united states and the world poverty rate."
+        },
+        {
+          "rank": 5,
+          "paper_id": "TIBKAT:36879587X",
+          "title": "Feminist economics today : beyond economic man",
+          "authors": null,
+          "year": "Unknown",
+          "similarity": 0.5402204804770553,
+          "explanation": "This paper focuses on women's economics."
+        }
+      ]
+    }
+  ]
+}

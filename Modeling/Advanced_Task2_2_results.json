@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "task": "paper_recommendation",
+    "description": "Hybrid similarity-based paper recommendation",
+    "timestamp": "2025-12-05T15:20:54.760851",
+    "n_train_papers": 32043,
+    "n_test_papers": 5354,
+    "n_evaluated_papers": 500,
+    "sampling_used": true,
+    "sample_size": 500,
+    "sample_ratio": 0.09338812103100486,
+    "n_labels": 14032,
+    "statistical_confidence_95ci": "±8.8%"
+  },
+  "configuration": {
+    "evaluation": {
+      "use_sampling": true,
+      "sample_size": 500,
+      "random_seed": 42
+    },
+    "recommendation": {
+      "K_values": [
+        5,
+        10,
+        20,
+        30,
+        50
+      ],
+      "label_threshold": 0.15,
+      "min_common_labels": 1,
+      "max_candidates": 1000,
+      "use_task1_params": true
+    },
+    "similarity": {
+      "alpha": 0.6
+    }
+  },
+  "results": {
+    "by_K": {
+      "5": {
+        "K": 5,
+        "precision_at_k": 0.37720000000000004,
+        "recall_at_k": 0.37720000000000004,
+        "f1_at_k": 0.37720000000000004,
+        "ndcg_at_k": 0.488532317673472,
+        "hit_rate": 0.566,
+        "avg_n_relevant": 1.886,
+        "n_queries": 500
+      },
+      "10": {
+        "K": 10,
+        "precision_at_k": 0.3488,
+        "recall_at_k": 0.3488,
+        "f1_at_k": 0.3488,
+        "ndcg_at_k": 0.5033346926943922,
+        "hit_rate": 0.624,
+        "avg_n_relevant": 3.488,
+        "n_queries": 500
+      },
+      "20": {
+        "K": 20,
+        "precision_at_k": 0.3211,
+        "recall_at_k": 0.3211,
+        "f1_at_k": 0.3211,
+        "ndcg_at_k": 0.5119290972572058,
+        "hit_rate": 0.682,
+        "avg_n_relevant": 6.422,
+        "n_queries": 500
+      },
+      "30": {
+        "K": 30,
+        "precision_at_k": 0.3031333333333333,
+        "recall_at_k": 0.3031333333333333,
+        "f1_at_k": 0.3031333333333333,
+        "ndcg_at_k": 0.5149192038682326,
+        "hit_rate": 0.72,
+        "avg_n_relevant": 9.094,
+        "n_queries": 500
+      },
+      "50": {
+        "K": 50,
+        "precision_at_k": 0.28384,
+        "recall_at_k": 0.28384,
+        "f1_at_k": 0.28384,
+        "ndcg_at_k": 0.5210728316520971,
+        "hit_rate": 0.76,
+        "avg_n_relevant": 14.192,
+        "n_queries": 500
+      }
+    },
+    "summary": {
+      "best_K_for_hit_rate": 50,
+      "best_K_for_precision": 5,
+      "best_K_for_ndcg": 50,
+      "avg_precision_across_K": 0.32681466666666664,
+      "avg_hit_rate_across_K": 0.6703999999999999,
+      "avg_ndcg_across_K": 0.5079576286290799
+    }
+  },
+  "detailed_analysis": {
+    "K_comparison": {
+      "5": {
+        "precision_rank": 1,
+        "hit_rate_rank": 5,
+        "ndcg_rank": 5
+      },
+      "10": {
+        "precision_rank": 2,
+        "hit_rate_rank": 4,
+        "ndcg_rank": 4
+      },
+      "20": {
+        "precision_rank": 3,
+        "hit_rate_rank": 3,
+        "ndcg_rank": 3
+      },
+      "30": {
+        "precision_rank": 4,
+        "hit_rate_rank": 2,
+        "ndcg_rank": 2
+      },
+      "50": {
+        "precision_rank": 5,
+        "hit_rate_rank": 1,
+        "ndcg_rank": 1
+      }
+    }
+  }
+}
