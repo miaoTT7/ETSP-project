@@ -8,9 +8,9 @@ ETSP-project/
 ├── Modeling/
 │   ├── baseline.py                          # Baseline recommendation model
 │   ├── Advanced_task1.py                    # Task 1 implementation
-│   ├── Advanced_task2_1_model_training.py   # Model training pipeline
-│   ├── Advanced_task2_2_recommendation.py   # Advanced recommendations
-│   ├── Advanced_task3_RAG_explainer.py      # RAG-based explainability
+│   ├── Advanced_task2_1_model_training.py   # Task 2 Model training pipeline
+│   ├── Advanced_task2_2_recommendation.py   # Task 2 Advanced recommendations
+│   ├── Advanced_task3_RAG_explainer.py      # Task 3 RAG-based explainability
 │   ├── models/                              # Trained models (ignored in git)
 │   └── *.json                               # Results and evaluations
 ├── web_app/
