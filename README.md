@@ -22,7 +22,7 @@ ETSP-project/
 └── README.md
 ```
 
-# How to run the code
+# Usage
 ```
 # dependencies
 
@@ -37,6 +37,9 @@ pip install -r requirements.txt
 cd web_app
 python app.py
 ```
+
+# Dataset
+
 ## GND Dataset
 
 ### Directory Structure
@@ -172,4 +175,25 @@ Raw TIBKAT JSON-LD
 - SBERT embeddings for each paper
 - Input text: content.text
 
+# Modeles
+### Pipeline Overview
+
+### **Baseline** (`baseline.py`)
+Initial benchmark using traditional recommendation techniques.
+
+### **Task 1: Subject Indexing** (`Advanced_task1.py`)
+- Compared multiple models: Logistic Regression, Random Forest, SVM, Gradient Boosting, XGBoost
+- **Selected XGBoost** as the final model for superior performance
+
+### **Task 2: Optimization & Hybrid Pipeline**
+- **Phase 2.1** (`Advanced_task2_1_model_training.py`): Hyperparameter tuning for XGBoost
+- **Phase 2.2** (`Advanced_task2_2_recommendation.py`): Combined XGBoost subject filtering + similarity-based re-ranking for enhanced recommendations
+
+### **Task 3: Explainability** (`Advanced_task3_RAG_explainer.py`)
+Implemented RAG (Retrieval-Augmented Generation) to provide interpretable explanations for each recommendation.
+
+### Evaluation Metrics
+Precision, Recall, F1-Score, MAP, AUC-ROC, NDCG
+
+Results are stored in `*.json` files in the `Modeling/` directory.
 
