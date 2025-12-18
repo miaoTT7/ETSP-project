@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .DS_Store
 __pycache__/
 .ipynb_checkpoints/
@@ -12,3 +13,6 @@ venv/
 /processed_data/
 /raw_data/
 /modeling/models/
+=======
+.DS_Store
+>>>>>>> 89e29612d3218567d6bdf1423f21492acbec9124
