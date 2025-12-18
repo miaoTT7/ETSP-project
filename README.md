@@ -182,7 +182,7 @@ Raw TIBKAT JSON-LD
 - SBERT embeddings for each paper
 - Input text: content.text
 
-# Modeles
+# Models
 
 ## **Baseline** (`baseline.py`)
 Initial benchmark using traditional recommendation techniques.
