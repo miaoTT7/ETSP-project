@@ -2,7 +2,29 @@
 Because the model files are too big, we upload the whole project to Google Drive. The link is as follows.
 https://drive.google.com/drive/folders/1Gkd00jvjH6rKgxrOtPXtFPA1S-n2cUno?usp=sharing
 
-## Directory Structure
+# Project structure
+```
+ETSP-project/
+├── Modeling/
+│   ├── baseline.py                          # Baseline recommendation model
+│   ├── Advanced_task1.py                    # Task 1 implementation
+│   ├── Advanced_task2_1_model_training.py   # Model training pipeline
+│   ├── Advanced_task2_2_recommendation.py   # Advanced recommendations
+│   ├── Advanced_task3_RAG_explainer.py      # RAG-based explainability
+│   ├── models/                              # Trained models (ignored in git)
+│   └── *.json                               # Results and evaluations
+├── web_app/
+│   ├── app.py                               # Flask application
+│   └── templates/
+│       └── index.html                       # Web interface
+├── processed_data/                          # Processed datasets (ignored)
+├── .gitignore
+└── README.md
+```
+
+## GND Dataset
+
+### Directory Structure
 
 - **`raw_data`**：Contains the original, unprocessed datasets. Currently includes:
   - GND: `GND-Subjects-tib-core.json` (core subject data)
@@ -11,9 +33,6 @@ https://drive.google.com/drive/folders/1Gkd00jvjH6rKgxrOtPXtFPA1S-n2cUno?usp=sha
 - **`cleaned_data`**：Intended to store data after cleaning/preprocessing.
 
 - **`code`**：Holds scripts for data extraction, cleaning, analysis, etc.
-
-
-# GND Dataset
 
 ```bash
 processed_data/GND/
@@ -56,7 +75,7 @@ Raw GND JSON → cleaning/cleaned_GND.jsonl
 - `embedding/subject_ids.json` : Final English subject labels (clean + verified + standardized). English text for each subject (used for embedding + metadata)
 - `embedding/subject_embeddings.npy` : Final subject embedding matrix. Ready-to-use subject embedding matrix
 
-## subject_ids.json
+### subject_ids.json
 ```json
 [
   "gnd:4071095-6",
@@ -67,7 +86,7 @@ Raw GND JSON → cleaning/cleaned_GND.jsonl
 ```
 - A list of all GND subject IDs used in the project.
 
-## subject_texts.json
+### subject_texts.json
 ```json
 {
   "gnd:4071095-6": "Financial market",
@@ -79,11 +98,11 @@ Raw GND JSON → cleaning/cleaned_GND.jsonl
 - A dictionary that maps each subject ID to its final English label
 - These are the text labels the model uses to build embeddings
 
-## subject_embeddings.npy
+### subject_embeddings.npy
 - A NumPy matrix containing the SBERT (MiniLM-L6-v2) embeddings for every subject in `subject_ids.json`.
 - Vector representation for each subject
 
-# TIBKAT Dataset
+## TIBKAT Dataset
 
 ```bash
 processed_data/TIBKAT/
@@ -122,7 +141,7 @@ Raw TIBKAT JSON-LD
 - `translating/` : Translated version of the TIBKAT subjects.
 - `embedding/` : Ready-to-use embeddings for the TIBKAT papers (one vector per paper)
 
-## tibkat_*_ids.json
+### tibkat_*_ids.json
 ```json
 [
   "TIBKAT%3A72999130X",
@@ -134,6 +153,7 @@ Raw TIBKAT JSON-LD
 - A list of paper_id values for each split (train / test).
 - The index in this list matches the row index in the corresponding embedding matrix.
 
-## tibkat_*_embeddings.npy
+### tibkat_*_embeddings.npy
 - SBERT embeddings for each paper
 - Input text: content.text
+
