@@ -1,11 +1,11 @@
 # Table of Contents
-- [Project Overview](#project-overview)
+- [Model Files](#model-files)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
 - [Dataset](#dataset)
 - [Models](#models)
 
-# Project Overview
+# Model Files
 Because the model files are too big, we upload the whole project to Google Drive. The link is as follows.
 https://drive.google.com/drive/folders/1Gkd00jvjH6rKgxrOtPXtFPA1S-n2cUno?usp=sharing
 
